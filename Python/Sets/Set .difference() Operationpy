@@ -1,0 +1,5 @@
+#!/bin/python3
+
+# setA.difference(setB) returns the element that presen in satA and not present in setB
+setA, setB = [ set(input().split()) for _ in range(4)][1::2]
+print( len(setA.difference(setB)))
