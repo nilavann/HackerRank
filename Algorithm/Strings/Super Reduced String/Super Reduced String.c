@@ -9,9 +9,6 @@
 char* super_reduced_string(char* s){
     // Complete this function
     for(int i = 0; i < strlen(s);){
-        //printf("%c %c %d\n",s[i],s[i+1],i);
-        //printf("%s\n",s);
-        
         //check pre char is same as present
         if(s[i] == s[i - 1]){
             i--;
@@ -24,7 +21,6 @@ char* super_reduced_string(char* s){
             s[k] = '\0';
         }else
             i++;
-        //printf("%s\n",s);
     }
     if(strlen(s) == 0)
         return "Empty String";
