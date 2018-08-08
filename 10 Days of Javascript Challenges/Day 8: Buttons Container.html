@@ -1,0 +1,53 @@
+<!-- Enter your HTML code here -->
+<!DOCTYPE html>
+<html>
+    <script type="text/javascript">
+	
+	   function ChangeOrder(){
+            let temp = btn1.innerHTML;
+		    btn1.innerHTML = btn4.innerHTML;
+            btn4.innerHTML = btn7.innerHTML;
+            btn7.innerHTML = btn8.innerHTML;
+            btn8.innerHTML = btn9.innerHTML;
+            btn9.innerHTML = btn6.innerHTML;
+            btn6.innerHTML = btn3.innerHTML;
+            btn3.innerHTML = btn2.innerHTML;
+            btn2.innerHTML = temp;
+	   }
+    </script>
+    <style type="text/css">
+        #btns {
+            width: 75%;
+            position: relative;
+        }
+        .buttonClass {
+            width: 30%;
+            height: 48px;
+            font-size: 24px;
+            position: relative;
+        }
+    </style>
+    <head>
+        <meta charset="utf-8">
+        <title>Buttons Grid</title>
+    </head>
+    <body>
+        <div id="btns">
+            <div>
+                <button id="btn1" class="buttonClass">1</button>
+                <button id="btn2" class="buttonClass">2</button>
+                <button id="btn3" class="buttonClass">3</button>
+            </div>
+            <div>
+                <button id="btn4" class="buttonClass">4</button>
+                <button id="btn5" onclick="ChangeOrder()" class="buttonClass">5</button>
+                <button id="btn6" class="buttonClass">6</button>
+            </div>
+            <div>
+                <button id="btn7" class="buttonClass">7</button>
+                <button id="btn8" class="buttonClass">8</button>
+                <button id="btn9" class="buttonClass">9</button>
+            </div>
+        </div>
+    </body>
+</html>
